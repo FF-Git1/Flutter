@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdemo/controller/HomeController.dart';
 import 'package:get/get.dart';
+import '../controller/HomeController.dart';
 
 class MyHomePage extends StatelessWidget {
   var count = 0.obs;
