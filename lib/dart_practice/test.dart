@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'package:flutterdemo/dart_practice/mixins_test.dart';
+
 class TestDemo {
   int x;
   int y;
@@ -36,5 +38,11 @@ main() {
   var test2 = TestDemo(x: 3, y: 4);
   var test3 = test + test2;
   test3.b = TestDemo(x: 3, y: 4);
-  print("d1 = ${test.distance}, d2 = ${test2.distance}, d3 = ${test3.distance}");
+  var mix = Mixins();
+  var mix2 = Mixins2();
+  mix.say();
+  mix2.say();
+  mix.walk();
+  mix2.walk();
+  print("d1 = ${test.distance} -- ${test.runtimeType}, d2 = ${test2.distance}, d3 = ${test3.distance}");
 }
